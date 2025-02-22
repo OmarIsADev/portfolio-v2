@@ -8,6 +8,8 @@ const projects = [
     header: "Linux Distro",
     description: "Linux distro landing page",
     img: axyl,
+    demo: "https://axyl-landing.vercel.app/",
+    github: "https://github.com/OmarIsADev/Axyl-landing",
     stack: ["Reactjs", "Vite", "TailwindCSS"],
   },
   {
