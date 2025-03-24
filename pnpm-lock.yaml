@@ -61,7 +61,7 @@ importers:
         specifier: ^3.4.15
         version: 3.4.17
       vite:
-        specifier: ^5.4.10
+        specifier: ^5.1
         version: 5.4.14
       vite-plugin-svgr:
         specifier: ^4.3.0
