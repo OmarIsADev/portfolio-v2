@@ -9,7 +9,7 @@ const projects = [
     header: "Ultimate Tic Tac Toe",
     description: "Ulitmate Tic Tac Toe Game can be played with friends",
     img:uttt,
-    demo: "http://ttt.chatty.social",
+    demo: "https://ttt.chatty.social",
     stack: ["Reactjs", "Vite", "TailwindCSS", "HeroUI", "React-Router", "WebSocket"]
   },
   {
