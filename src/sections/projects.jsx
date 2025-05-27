@@ -2,8 +2,16 @@ import Link from "../components/link";
 import axyl from "../assets/projects/axyl.png";
 import formuia from "../assets/projects/formuia.png";
 import whatsapp from "../assets/projects/whatsapp.png";
+import uttt from "../assets/projects/uttt.png"
 
 const projects = [
+  {
+    header: "Ultimate Tic Tac Toe",
+    description: "Ulitmate Tic Tac Toe Game can be played with friends",
+    img:uttt,
+    demo: "http://ttt.chatty.social",
+    stack: ["Reactjs", "Vite", "TailwindCSS", "HeroUI", "React-Router", "WebSocket"]
+  },
   {
     header: "Linux Distro",
     description: "Linux distro landing page",
@@ -19,7 +27,7 @@ const projects = [
     img: formuia,
     demo: "https://formuia.vercel.app",
     github: "https://github.com/omarisadev/formuia",
-    stack: ["Nextjs", "TailwindCSS", "Firebase", "NextUI"],
+    stack: ["Nextjs", "TailwindCSS", "Firebase", "HeroUI"],
   },
   {
     header: "Whatsapp Clone",
