@@ -18,8 +18,8 @@ function Hero() {
       <div className="z-10 flex flex-col items-start gap-2.5 max-sm:items-center">
         <h1 className="max-sm:text-7xl">Welcome!</h1>
         <h3 className="w-fit max-sm:max-w-[80vw]">
-          My name is Omar,
-          <br /> I&apos;m a Fullstack web Developer.
+          Omar,
+          <br /> A Fullstack web Developer.
         </h3>
       </div>
     </div>

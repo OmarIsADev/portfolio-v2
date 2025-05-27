@@ -10,41 +10,52 @@ const techs = [
   {
     title: "TypeScript",
     image: ts,
-    description: "Better javascript.",
+    summary: "Better javascript.",
+    description:
+      "TypeScript is a typed superset of JavaScript Which helps finding bugs in your code in the development phase.",
   },
   {
-    title: "React",
+    title: "Reactjs",
     image: react,
-    description: "Lego of web.",
+    summary: "Lego of web.",
+    description:
+      "A JavaScript library for building user interfaces, Helps breaking down complex UIs into easy-to-manage pieces of code that can be reused across the site 'components'.",
   },
   {
     title: "Tailwind",
     image: tailwind,
-    description: "A utility-first CSS framework.",
+    summary: "A utility-first CSS framework.",
+    description: "A utility-first CSS framework for rapidly building custom designs."
   },
   {
     title: "Next.js",
     image: next,
-    description: "React with tools and faster development.",
+    summary: "React with tools and faster development.",
+    description: "It's a Reactjs Framework that includes tools ready for production and faster development."
   },
   {
     title: "Supabase",
     image: supabase,
-    description: "A ready to use backend.",
+    summary: "A ready to use backend.",
+    description: "A ready to use backend instead of building backend from scratch to save time."
   },
   {
     title: "Firebase",
     image: firebase,
-    description: "Google's ready to use backend.",
-  }
-]
+    summary: "Google's ready to use backend.",
+    description: "Google's ready to use backend instead of building backend from scratch to save time."
+  },
+];
 
 export default function About() {
   return (
-    <div id="about" className="flex flex-col items-center gap-16 lg:px-32 sm:px-16 px-6 *:max-w-5xl">
+    <div
+      id="about"
+      className="flex flex-col items-center gap-16 px-6 *:max-w-5xl sm:px-16 lg:px-32"
+    >
       <h2>About me</h2>
 
-      <div className="*:indent-4 flex flex-col gap-4 max-w-2xl md:!p-0">
+      <div className="flex max-w-2xl flex-col gap-4 *:indent-4 md:!p-0">
         <p>
           Hello! My name is Omar Saad. I&apos;m from Egypt. During my free time,
           I usually code, learn New technologies, New languages, And play video
@@ -65,8 +76,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-12 justify-center">
-
+      <div className="grid justify-center gap-12 md:grid-cols-2 xl:grid-cols-3">
         {techs.map((tech) => (
           <Tech key={tech.title} {...tech} />
         ))}
