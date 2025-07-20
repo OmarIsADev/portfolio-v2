@@ -2,15 +2,25 @@ import Link from "../components/link";
 import axyl from "../assets/projects/axyl.png";
 import formuia from "../assets/projects/formuia.png";
 import whatsapp from "../assets/projects/whatsapp.png";
-import uttt from "../assets/projects/uttt.png"
+import exodia from "../assets/projects/exodia.png";
+// import uttt from "../assets/projects/uttt.png"
+
 
 const projects = [
+  // {
+  //   header: "Ultimate Tic Tac Toe",
+  //   description: "Ulitmate Tic Tac Toe Game can be played with friends",
+  //   img:uttt,
+  //   demo: "https://ttt.chatty.social",
+  //   stack: ["Reactjs", "Vite", "TailwindCSS", "HeroUI", "React-Router", "WebSocket"]
+  // },
   {
-    header: "Ultimate Tic Tac Toe",
-    description: "Ulitmate Tic Tac Toe Game can be played with friends",
-    img:uttt,
-    demo: "https://ttt.chatty.social",
-    stack: ["Reactjs", "Vite", "TailwindCSS", "HeroUI", "React-Router", "WebSocket"]
+    header: "Exodia-OS",
+    description: "Exodia-OS Website.",
+    img: exodia,
+    demo: "https://exodia-os.vercel.app/",
+    github: "https://github.com/OmarIsADev/exodia-OS",
+    stack: ["Astro", "Reactjs", "TailwindCSS"],
   },
   {
     header: "Linux Distro",
@@ -76,7 +86,7 @@ function Project({ project, index }) {
           <h4 className="">{header}</h4>
           <p>{description}</p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex gap-3 flex-wrap">
           {stack.map((item) => (
             <div
               key={item}
