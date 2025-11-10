@@ -3,17 +3,26 @@ import axyl from "../assets/projects/axyl.png";
 import formuia from "../assets/projects/formuia.png";
 import whatsapp from "../assets/projects/whatsapp.png";
 import exodia from "../assets/projects/exodia.png";
-// import uttt from "../assets/projects/uttt.png"
+import uttt from "../assets/projects/ultimatexo.png"
+import chainio from "../assets/projects/chain-io.png"
 
 
 const projects = [
-  // {
-  //   header: "Ultimate Tic Tac Toe",
-  //   description: "Ulitmate Tic Tac Toe Game can be played with friends",
-  //   img:uttt,
-  //   demo: "https://ttt.chatty.social",
-  //   stack: ["Reactjs", "Vite", "TailwindCSS", "HeroUI", "React-Router", "WebSocket"]
-  // },
+  {
+    header: "Chain-io",
+    description: "A social-media but using numbers and operations!",
+    img: chainio,
+    demo: "https://chain-io.vercel.app/",
+    github: "https://github.com/OmarIsADev/mini-calc-chain-webapp",
+    stack: ["Nextjs", "TailwindCSS", "Reactjs", "MongoDB", "ShadCN UI"],
+  },
+  {
+    header: "UltimateXO",
+    description: "Ulitmate Tic Tac Toe Game with a multiplayer and bot mods.",
+    img:uttt,
+    demo: "https://ultimatexo.com",
+    stack: ["Reactjs", "Vite", "TailwindCSS", "HeroUI", "React-Router", "WebSocket"]
+  },
   {
     header: "Exodia-OS",
     description: "Exodia-OS Website.",
