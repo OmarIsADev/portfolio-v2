@@ -83,7 +83,7 @@ function Project({ project, index }) {
     <div className="grid max-w-[1312px] md:grid-cols-2 gap-8">
       <img
         src={img}
-        className={`${index % 2 === 0 ? "-order-1 justify-self-end" : "md:order-1"}`}
+        className={`rounded-2xl ${index % 2 === 0 ? "-order-1 justify-self-end" : "md:order-1"}`}
         alt=""
       />
       <div
