@@ -61,7 +61,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="flex flex-col items-center gap-16">
+    <div id="projects" className="flex flex-col items-center gap-16 px-6 sm:px-16">
       <div className="flex flex-col items-center gap-4">
         <h2>Projects</h2>
         <h3>Personal projects</h3>
@@ -80,10 +80,10 @@ function Project({ project, index }) {
   const { header, description, img, stack, demo, github } = project;
 
   return (
-    <div className="grid max-w-[1312px] md:grid-cols-2 gap-8">
+    <div className="grid max-w-[1312px] lg:grid-cols-2 gap-8">
       <img
         src={img}
-        className={`rounded-2xl ${index % 2 === 0 ? "-order-1 justify-self-end" : "md:order-1"}`}
+        className={`rounded-2xl ${index % 2 === 0 ? "-order-1 justify-self-end" : "lg:order-1"}`}
         alt=""
       />
       <div
