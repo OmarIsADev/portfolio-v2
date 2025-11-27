@@ -14,7 +14,7 @@ export default function Thesis() {
 function Hero() {
   return (
     <div className="col-span-2 row-span-3 flex items-center justify-center md:row-span-1">
-      <img src={HeroGradient} alt="" className="absolute z-0 p-3 md:p-0" />
+      <img src={HeroGradient} alt="" className="absolute z-0 p-3 pointer-events-none md:p-0" />
       <div className="z-10 flex flex-col items-start gap-2.5 max-sm:items-center">
         <h1 className="max-sm:text-7xl">Welcome!</h1>
         <h3 className="w-fit max-sm:max-w-[80vw]">
