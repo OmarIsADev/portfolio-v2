@@ -5,7 +5,7 @@ import whatsapp from "../assets/projects/whatsapp.png";
 import exodia from "../assets/projects/exodia.png";
 import uttt from "../assets/projects/ultimatexo.png"
 import chainio from "../assets/projects/chain-io.png"
-
+import weather from "../assets/projects/weather-app.png"
 
 const projects = [
   {
@@ -19,7 +19,7 @@ const projects = [
   {
     header: "UltimateXO",
     description: "Ulitmate Tic Tac Toe Game with a multiplayer and bot mods.",
-    img:uttt,
+    img: uttt,
     demo: "https://ultimatexo.com",
     stack: ["Reactjs", "Vite", "TailwindCSS", "HeroUI", "React-Router", "WebSocket"]
   },
@@ -38,6 +38,14 @@ const projects = [
     demo: "https://axyl-landing.vercel.app/",
     github: "https://github.com/OmarIsADev/Axyl-landing",
     stack: ["Reactjs", "Vite", "TailwindCSS"],
+  },
+  {
+    header: "Weather App",
+    description: "A Working weather web app",
+    img: weather,
+    demo: "https://omarisadev.github.io/PRODIGY_WD_05",
+    github: "https://github.com/OmarIsADev/PRODIGY_WD_05",
+    stack: ["Reactjs", "TailwindCSS"]
   },
   {
     header: "Formuia",
