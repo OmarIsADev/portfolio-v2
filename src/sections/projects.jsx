@@ -3,9 +3,10 @@ import axyl from "../assets/projects/axyl.png";
 import formuia from "../assets/projects/formuia.png";
 import whatsapp from "../assets/projects/whatsapp.png";
 import exodia from "../assets/projects/exodia.png";
-import uttt from "../assets/projects/ultimatexo.png"
-import chainio from "../assets/projects/chain-io.png"
-import weather from "../assets/projects/weather-app.png"
+import uttt from "../assets/projects/ultimatexo.png";
+import chainio from "../assets/projects/chain-io.png";
+import weather from "../assets/projects/weather-app.png";
+import timer from "../assets/projects/timer-app.png";
 
 const projects = [
   {
@@ -21,7 +22,14 @@ const projects = [
     description: "Ulitmate Tic Tac Toe Game with a multiplayer and bot mods.",
     img: uttt,
     demo: "https://ultimatexo.com",
-    stack: ["Reactjs", "Vite", "TailwindCSS", "HeroUI", "React-Router", "WebSocket"]
+    stack: [
+      "Reactjs",
+      "Vite",
+      "TailwindCSS",
+      "HeroUI",
+      "React-Router",
+      "WebSocket",
+    ],
   },
   {
     header: "Exodia-OS",
@@ -45,7 +53,15 @@ const projects = [
     img: weather,
     demo: "https://omarisadev.github.io/PRODIGY_WD_05",
     github: "https://github.com/OmarIsADev/PRODIGY_WD_05",
-    stack: ["Reactjs", "TailwindCSS"]
+    stack: ["Reactjs", "TailwindCSS"],
+  },
+  {
+    header: "Timer App",
+    description: "A Working timer web app",
+    img: timer,
+    demo: "https://omarisadev.github.io/PRODIGY_WD_02",
+    github: "https://github.com/OmarIsADev/PRODIGY_WD_02",
+    stack: ["Reactjs", "TailwindCSS"],
   },
   {
     header: "Formuia",
@@ -58,8 +74,7 @@ const projects = [
   },
   {
     header: "Whatsapp Clone",
-    description:
-      "Whatsapp landing page clone.",
+    description: "Whatsapp landing page clone.",
     img: whatsapp,
     demo: "https://whatsapp-rose-seven.vercel.app/",
     github: "https://github.com/OmarIsADev/whatsapp",
@@ -69,7 +84,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="flex flex-col items-center gap-16 px-6 sm:px-16">
+    <div
+      id="projects"
+      className="flex flex-col items-center gap-16 px-6 sm:px-16"
+    >
       <div className="flex flex-col items-center gap-4">
         <h2>Projects</h2>
         <h3>Personal projects</h3>
@@ -88,7 +106,7 @@ function Project({ project, index }) {
   const { header, description, img, stack, demo, github } = project;
 
   return (
-    <div className="grid max-w-[1312px] lg:grid-cols-2 gap-8">
+    <div className="grid max-w-[1312px] gap-8 lg:grid-cols-2">
       <img
         src={img}
         className={`rounded-2xl ${index % 2 === 0 ? "-order-1 justify-self-end" : "lg:order-1"}`}
@@ -103,7 +121,7 @@ function Project({ project, index }) {
           <h4 className="">{header}</h4>
           <p>{description}</p>
         </div>
-        <div className="flex gap-3 flex-wrap">
+        <div className="flex flex-wrap gap-3">
           {stack.map((item) => (
             <div
               key={item}
