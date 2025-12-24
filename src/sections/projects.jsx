@@ -7,6 +7,7 @@ import uttt from "../assets/projects/ultimatexo.png";
 import chainio from "../assets/projects/chain-io.png";
 import weather from "../assets/projects/weather-app.png";
 import timer from "../assets/projects/timer-app.png";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -106,7 +107,13 @@ function Project({ project, index }) {
   const { header, description, img, stack, demo, github } = project;
 
   return (
-    <div className="grid max-w-[1312px] gap-8 lg:grid-cols-2">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="grid max-w-[1312px] gap-8 lg:grid-cols-2"
+    >
       <img
         src={img}
         className={`rounded-2xl ${index % 2 === 0 ? "-order-1 justify-self-end" : "lg:order-1"}`}
@@ -140,6 +147,6 @@ function Project({ project, index }) {
           {demo && <Link href={demo}>Demo</Link>}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

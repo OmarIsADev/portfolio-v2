@@ -5,6 +5,7 @@ import next from "../assets/tech/next.svg";
 import supabase from "../assets/tech/supabase.svg";
 import firebase from "../assets/tech/firebase.svg";
 import Tech from "../components/tech";
+import { motion } from "framer-motion";
 
 const techs = [
   {
@@ -55,7 +56,13 @@ export default function About() {
     >
       <h2>About me</h2>
 
-      <div className="flex max-w-2xl flex-col gap-4 *:indent-4 md:!p-0">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="flex max-w-2xl flex-col gap-4 *:indent-4 md:!p-0"
+      >
         <p>
           Hello! My name is Omar Saad. I&apos;m from Egypt. During my free time,
           I usually code, learn New technologies, New languages, And play video
@@ -74,11 +81,19 @@ export default function About() {
           particular interest in web development and android development. I have
           become confident using the following technologies:
         </p>
-      </div>
+      </motion.div>
 
       <div className="grid justify-center gap-12 md:grid-cols-2 xl:grid-cols-3">
         {techs.map((tech) => (
-          <Tech key={tech.title} {...tech} />
+          <motion.div
+            key={tech.title}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <Tech {...tech} />
+          </motion.div>
         ))}
         {/* <img src={html} alt="" />
         <img src={css} alt="" />

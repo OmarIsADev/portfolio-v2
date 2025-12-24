@@ -1,4 +1,5 @@
 import HeroGradient from "../assets/hero-grad.svg";
+import { motion } from "framer-motion";
 
 const routes = ["Projects", "About", "Timeline", "Contact"];
 
@@ -20,11 +21,23 @@ function Hero() {
         className="pointer-events-none absolute z-0 p-3 md:p-0"
       />
       <div className="z-10 flex flex-col items-start gap-2.5 max-sm:items-center">
-        <h1 className="max-sm:text-7xl">Welcome!</h1>
-        <h3 className="w-fit max-sm:max-w-[80vw]">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="max-sm:text-7xl"
+        >
+          Welcome!
+        </motion.h1>
+        <motion.h3
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-fit max-sm:max-w-[80vw]"
+        >
           I&apos;m Omar,
           <br /> A Fullstack web Developer.
-        </h3>
+        </motion.h3>
       </div>
     </div>
   );
@@ -32,7 +45,12 @@ function Hero() {
 
 function Nav() {
   return (
-    <aside className="col-span-3 row-span-1 flex items-center justify-center md:col-span-1">
+    <motion.aside
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
+      className="col-span-3 row-span-1 flex items-center justify-center md:col-span-1"
+    >
       <ul className="flex flex-col gap-8 border-t-2 border-[var(--sub)] p-4 *:text-xl *:leading-5 md:border-l-2 md:border-t-0">
         {routes.map((route) => (
           <li key={route}>
@@ -40,6 +58,6 @@ function Nav() {
           </li>
         ))}
       </ul>
-    </aside>
+    </motion.aside>
   );
 }
