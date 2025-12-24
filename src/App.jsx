@@ -3,6 +3,7 @@ import About from "./sections/about";
 import Contact from "./sections/contact";
 import Projects from "./sections/projects";
 import Thesis from "./sections/thesis";
+import Timeline from "./sections/timeline";
 import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
@@ -14,6 +15,8 @@ export default function App() {
       <Projects />
       <Line />
       <About />
+      <Line />
+      <Timeline />
       <Line />
       <Contact />
       <Analytics />
