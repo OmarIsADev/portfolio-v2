@@ -1,5 +1,6 @@
 import Line from "./components/line";
 import About from "./sections/about";
+import Certificates from "./sections/certificates";
 import Contact from "./sections/contact";
 import Projects from "./sections/projects";
 import Thesis from "./sections/thesis";
@@ -13,6 +14,8 @@ export default function App() {
       <Thesis />
       <Line />
       <Projects />
+      <Line />
+      <Certificates />
       <Line />
       <About />
       <Line />

@@ -1,7 +1,7 @@
 import HeroGradient from "../assets/hero-grad.svg";
 import { motion } from "framer-motion";
 
-const routes = ["Projects", "About", "Timeline", "Contact"];
+const routes = ["Projects", "About", "Certificates", "Timeline", "Contact"];
 
 export default function Thesis() {
   return (
