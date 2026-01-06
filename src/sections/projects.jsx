@@ -1,13 +1,14 @@
 import Link from "../components/link";
 import axyl from "../assets/projects/axyl.png";
-import formuia from "../assets/projects/formuia.png";
-import whatsapp from "../assets/projects/whatsapp.png";
-import exodia from "../assets/projects/exodia.png";
-import uttt from "../assets/projects/ultimatexo.png";
 import chainio from "../assets/projects/chain-io.png";
-import weather from "../assets/projects/weather-app.png";
-import timer from "../assets/projects/timer-app.png";
+import dashboard from "../assets/projects/dashboard.png";
+import exodia from "../assets/projects/exodia.png";
+import formuia from "../assets/projects/formuia.png";
 import { motion } from "framer-motion";
+import timer from "../assets/projects/timer-app.png";
+import uttt from "../assets/projects/ultimatexo.png";
+import weather from "../assets/projects/weather-app.png";
+import whatsapp from "../assets/projects/whatsapp.png";
 
 const projects = [
   {
@@ -20,7 +21,7 @@ const projects = [
   },
   {
     header: "UltimateXO",
-    description: "Ulitmate Tic Tac Toe Game with a multiplayer and bot mods.",
+    description: "Ultimate Tic Tac Toe Game with a multiplayer and bot mods.",
     img: uttt,
     demo: "https://ultimatexo.com",
     stack: [
@@ -31,6 +32,14 @@ const projects = [
       "React-Router",
       "WebSocket",
     ],
+  },
+  {
+    header: "Mini Dashboard",
+    description: "A mini dashboard template.",
+    img: dashboard,
+    demo: "https://dashboard-green-alpha-48.vercel.app/",
+    github: "https://github.com/OmarIsADev/Dashboard",
+    stack: ["Reactjs", "Vite", "TailwindCSS", "Redux"],
   },
   {
     header: "Exodia-OS",
