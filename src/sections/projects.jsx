@@ -9,6 +9,7 @@ import timer from "../assets/projects/timer-app.png";
 import uttt from "../assets/projects/ultimatexo.png";
 import weather from "../assets/projects/weather-app.png";
 import whatsapp from "../assets/projects/whatsapp.png";
+import taskspaces from "../assets/projects/task-spaces.png";
 
 const projects = [
   {
@@ -32,6 +33,15 @@ const projects = [
       "React-Router",
       "WebSocket",
     ],
+  },
+  {
+    header: "Task Spaces",
+    description:
+      "Task Spaces is a modern, privacy-focused productivity workspace designed to help you organize your life with ease. Seamlessly toggle between managing tasks and capturing quick notes in a beautiful, distraction-free environment.",
+    img: taskspaces,
+    demo: "https://task-spaces.vercel.app/",
+    github: "https://github.com/OmarIsADev/Task-Spaces",
+    stack: ["Reactjs", "Vite", "TailwindCSS", "React-Router", "DnD-kit"],
   },
   {
     header: "Mini Dashboard",
