@@ -26,7 +26,6 @@ export default function Contact() {
         </div>
         <div className="flex gap-4">
             <Link href="mailto:omarisadev@gmail.com" className="w-fit h-fit py-2 px-3 hover:bg-transparent transition">Send Email</Link>
-            <Link href="https://buymeacoffee.com/omar.saad" className="w-fit h-fit py-2 px-3 bg-transparent">Buy me a coffee</Link>
         </div>
       </motion.div>
     </div>
