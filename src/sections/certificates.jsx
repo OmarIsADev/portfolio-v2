@@ -1,7 +1,7 @@
 import CertificateCard from "../components/certificate-card";
-import HackerRankReact from "../assets/certificates/HackerRank-React(Basic).png";
-import HackerRankFrontend from "../assets/certificates/HackerRank-Frontend(React).png";
-import ProdigyCert from "../assets/certificates/Prodigy-InfoTech-Intern.png";
+import HackerRankReact from "../assets/certificates/HackerRank-React(Basic).webp";
+import HackerRankFrontend from "../assets/certificates/HackerRank-Frontend(React).webp";
+import ProdigyCert from "../assets/certificates/Prodigy-InfoTech-Intern.webp";
 
 const certificates = [
   {
