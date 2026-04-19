@@ -12,6 +12,7 @@ import weather from "../assets/projects/weather-app.webp";
 import whatsapp from "../assets/projects/whatsapp.webp";
 import taskspaces from "../assets/projects/task-spaces.webp";
 import digitalBank from "../assets/projects/digitalbank-landing.webp";
+import opensyntax from "../assets/projects/opensyntax-landing.webp";
 
 const projects = [
   {
@@ -37,6 +38,15 @@ const projects = [
       "React-Router",
       "WebSocket",
     ],
+  },
+  {
+    header: "Open Syntax landing page",
+    description: "Open Syntax is a team of developers working on open-source projects.",
+    img: opensyntax,
+    category: "Landing Page",
+    demo: "https://opensyntax-landing.vercel.app/",
+    github: "https://github.com/OmarIsADev/opensyntax-landing",
+    stack: ["Reactjs", "Vite", "TailwindCSS"],
   },
   {
     header: "Task Spaces",
