@@ -13,8 +13,17 @@ import whatsapp from "../assets/projects/whatsapp.webp";
 import taskspaces from "../assets/projects/task-spaces.webp";
 import digitalBank from "../assets/projects/digitalbank-landing.webp";
 import opensyntax from "../assets/projects/opensyntax-landing.webp";
+import goodguys from "../assets/projects/good-guys.webp";
 
 const projects = [
+  {
+    header: "Good Guys",
+    description: "A comprehensive full-stack clothing e-commerce platform. Features include a modern storefront with dynamic product listings and a secure checkout flow, alongside a dedicated admin dashboard for managing inventory and tracking orders.",
+    img: goodguys,
+    category: "Fullstack",
+    demo: "https://good-guys.vercel.app/",
+    stack: ["Nextjs", "TailwindCSS", "Reactjs", "MongoDB"],
+  },
   {
     header: "Chain-io",
     description: "A social-media but using numbers and operations!",
