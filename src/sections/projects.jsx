@@ -167,7 +167,7 @@ export default function Projects() {
               key={cat}
               onClick={() => setFilter(cat)}
               className={`rounded-full px-5 py-2 text-sm font-medium transition-all ${filter === cat
-                ? "bg-[var(--color)] text-bg scale-105 shadow-md"
+                ? "bg-[var(--color)] hover:bg-[var(--color)] hover:text-bg  text-bg scale-105 shadow-md"
                 : "bg-transparent text-[var(--color)] border border-[var(--color)] hover:bg-[var(--color)] hover:text-bg opacity-70 hover:opacity-100"
                 }`}
             >
