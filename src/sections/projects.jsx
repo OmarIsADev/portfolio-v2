@@ -14,8 +14,18 @@ import taskspaces from "../assets/projects/task-spaces.webp";
 import digitalBank from "../assets/projects/digitalbank-landing.webp";
 import opensyntax from "../assets/projects/opensyntax-landing.webp";
 import goodguys from "../assets/projects/good-guys.webp";
+import bestStemCellTurkey from "../assets/projects/best-stemcell-turkey.webp";
 
 const projects = [
+  {
+    header: "Best Stem Cell Turkey",
+    description:
+      "A premium medical tourism platform for stem cell therapy. Built with a fast, SEO-optimized architecture and integrating a Headless WordPress CMS for seamless blog and content management.",
+    img: bestStemCellTurkey,
+    category: "Fullstack",
+    demo: "https://beststemcellturkey.com",
+    stack: ["Nextjs", "Reactjs", "Headless WordPress", "TailwindCSS"],
+  },
   {
     header: "Good Guys",
     description: "A comprehensive full-stack clothing e-commerce platform. Features include a modern storefront with dynamic product listings and a secure checkout flow, alongside a dedicated admin dashboard for managing inventory and tracking orders.",
