@@ -1,5 +1,6 @@
 import HeroGradient from "../assets/hero-grad.svg";
 import { motion } from "framer-motion";
+import Link from "../components/link";
 
 const routes = ["Projects", "About", "Certificates", "Timeline", "Contact"];
 
@@ -38,6 +39,34 @@ function Hero() {
           I&apos;m Omar,
           <br /> A Fullstack web Developer.
         </motion.h3>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mt-4"
+        >
+          <Link
+            href="/Frontend-Engineer_Omar-Saad_Resume.pdf"
+            download="Frontend-Engineer_Omar-Saad_Resume.pdf"
+            className="flex items-center gap-2 hover:bg-transparent transition duration-300"
+          >
+            <svg
+              className="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              ></path>
+            </svg>
+            Download CV
+          </Link>
+        </motion.div>
       </div>
     </div>
   );
