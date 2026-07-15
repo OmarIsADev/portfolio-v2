@@ -48,7 +48,7 @@ const projects = [
     description: "Ultimate Tic Tac Toe Game with a multiplayer and bot mods.",
     img: uttt,
     category: "Game",
-    demo: "https://ultimatexo.com",
+    demo: "https://ultimatexo.com/",
     stack: [
       "Reactjs",
       "Vite",
@@ -63,7 +63,7 @@ const projects = [
     description: "Open Syntax is a team of developers working on open-source projects.",
     img: opensyntax,
     category: "Landing Page",
-    demo: "https://opensyntax-landing.vercel.app/",
+    demo: "https://opensyntax.dev/",
     github: "https://github.com/OmarIsADev/opensyntax-landing",
     stack: ["Reactjs", "Vite", "TailwindCSS"],
   },
